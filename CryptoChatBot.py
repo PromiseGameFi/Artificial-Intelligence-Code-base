@@ -9,6 +9,7 @@ openai.api_key = "API"
 model = "text-davinci-002"
 
 # Function to generate a response from the GPT-3 model
+#Edited
 def generate_response(prompt):
     response = openai.Completion.create(engine=model, prompt=prompt, temperature=0.5, max_tokens=1024, top_p=1, frequency_penalty=1, presence_penalty=0.5)
     return response["choices"][0]["text"]
