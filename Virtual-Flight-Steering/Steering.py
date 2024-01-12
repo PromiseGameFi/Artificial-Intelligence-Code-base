@@ -7,6 +7,7 @@ mp_drawing_styles = mp.solutions.drawing_styles
 mp_hands = mp.solutions.hands
 font = cv2.FONT_HERSHEY_SIMPLEX
 
+
 def relall():
         keyinput.release_key('d')
         keyinput.release_key('w')
@@ -22,6 +23,7 @@ def relall():
 
 # 0 For webcam input:
 cap = cv2.VideoCapture(0)
+
 
 with mp_hands.Hands(
     model_complexity=0,
