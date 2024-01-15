@@ -1,5 +1,7 @@
 import cv2
 
+
+
 # Capture video from the roadway
 cap = cv2.VideoCapture("roadway.mp4")
 
@@ -19,6 +21,7 @@ detector = cv2.SimpleBlobDetector_create(params)
 
 # Set up the tracker
 tracker = cv2.MultiTracker_create()
+
 
 # Process each frame
 while True:
